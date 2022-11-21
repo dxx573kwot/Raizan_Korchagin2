@@ -30,8 +30,8 @@ class Example(QWidget):
         self.repaint()
 
     def draw_flag(self, qp):
-        qp.setBrush(QColor(255, 255, 0))
-        for _ in range(3):
+        qp.setPen(QColor(255, 255, 0))
+        for _ in range(1):
             r = random.randint(20, 100)
             qp.drawEllipse(random.randint(50, 150), random.randint(50, 150), r, r)
 
